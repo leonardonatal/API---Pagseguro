@@ -1,0 +1,19 @@
+clone:
+  depth: full
+pipelines:
+  default:
+    - step:
+        image: node:10.15.3
+        caches:
+          - node
+        deployment: production
+        script:
+          - npm install
+          # deploy servidor
+          - mkdir -p ~/.ssh
+          - cat my_known_hosts >> ~/.ssh/known_hosts
+          - (umask 077; echo $SSH_PRIVATE_KEY | base64 --decode -i > ~/.ssh/id_rsa)
+          - git remote add server $HOSTINGER_GIT_REPO
+          - git push server master
+
+          

@@ -1,0 +1,28 @@
+{
+	"name": "node-pagseguro-sample",
+	"author": "Emerson Jose",
+	"description": "Projeto exemplo de como implementar o modulo de pagseguro em node.js",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "nodemon app.js",
+		"start-prod": "pm2 start app.js --name API-VALERIA-SHOP"
+	},
+	"dependencies": {
+		"ejs": ">=2.3.3",
+		"express": "2.5.10",
+		"firebase-admin": "^7.1.0",
+		"node-correios": "^2.2.0",
+		"nodemailer": "^5.1.1",
+		"nodemon": "^1.18.10",
+		"pagseguro": ">=0.1.0",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4",
+		"xml-js": "^1.6.11",
+		"xml2js": "^0.4.19",
+		"xml2json-light": "^1.0.6"
+	},
+	"devDependencies": {
+		"lodash": "^4.17.11"
+	}
+}
