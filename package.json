@@ -11,7 +11,7 @@
 	"dependencies": {
 		"ejs": ">=2.3.3",
 		"express": "2.5.10",
-		"firebase-admin": "^7.1.0",
+		"firebase-admin": "^11.4.1",
 		"node-correios": "^2.2.0",
 		"nodemailer": "^5.1.1",
 		"nodemon": "^1.18.10",
